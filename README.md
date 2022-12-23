@@ -1,2 +1,2 @@
-# SeungTUDY-1
-PID-basic; Seesaw
+# SeungTUDY
+PID-basic
