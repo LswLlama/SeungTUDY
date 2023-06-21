@@ -1,0 +1,31 @@
+#include <Servo.h> // 라이브러리 가져옴
+Servo servomotor; //개체 선언
+int a; // 전역 변수
+
+
+// 셋업
+void setup() { 
+  #서보 핀 9번
+  servomotor.attach(9);
+
+  #시리얼 통신
+  Serial.begin(9600);                               
+  while(!Serial); // 시리얼 연결 될 때까지 기다림                                           
+  Serial.println("Servor Mortor"); // 연결 되면 시리얼 모니터에 출력
+}
+
+
+void loop() {
+
+  if(Serial.available()) { // 시리얼 모니터에 어떤 값이 들어오면 (버퍼에 값 있으면) 실행
+
+    a = Serial.parseInt(); // 시리얼 모니터에서 받은 값을 a라는 변수에 할당
+
+      Serial.print("angle : "); 
+      Serial.println(a); // 할당된 값 출력 
+
+      servomotor.write(a); // 서보모터 a[단위: 도] 각도로 출력  
+      delay(15);
+  }
+
+}
