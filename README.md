@@ -3,7 +3,8 @@
 2022 Dec ~ 2023 Jan 
 
 ### Project1 Seesaw
-![KakaoTalk_20230621_140102575](https://github.com/LswLlama/SeungTUDY/assets/115550749/d04567dd-901a-4993-8aaa-12426c80b3b0)
+![PID seesaw](https://github.com/LswLlama/SeungTUDY/assets/115550749/932ef15c-d4a4-4798-b70d-9d9317113604)
+
 #### TOC
 - Document
   - [`로봇팔 구조도`](project1_seesaw/src/Seesaw_structure.md) : 구조도
