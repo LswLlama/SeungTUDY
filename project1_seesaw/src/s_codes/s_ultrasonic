@@ -1,0 +1,46 @@
+#define TRIG 7 //TRIG 핀 설정 (초음파 보내는 핀)
+
+#define ECHO 6 //ECHO 핀 설정 (초음파 받는 핀)
+
+// 보이드는 '무'에서 시작한다는거
+// 셋업 코드
+void setup() {
+// 시리얼 셋업
+  Serial.begin(9600); //PC로 시리얼 통신 (유선 통신)을 해 초음파 센서값을 확인하기위해 시리얼 통신 속도 정의. 
+
+  pinMode(TRIG, OUTPUT); // TRIG 핀은 초음파 보내는거 (OUTPUT)
+  pinMode(ECHO, INPUT); // ECHO 핀은 초음파 받는거 (INPUT)
+
+}
+
+
+// 루프 함수
+void loop() {
+// 초음파 쏘는 코드
+  long duration, distance; // 걸린 시간이랑 거리 지역 변수로 정의
+
+  digitalWrite(TRIG, LOW); // 트리거 LOW(최소 출력 값 = 0)
+  delayMicroseconds(2); // 2 마이크로초동안
+
+  digitalWrite(TRIG, HIGH); // 트리거 HIGH(최대 출력)
+  delayMicroseconds(10); // 10 마이크로초동안
+
+  digitalWrite(TRIG, LOW); // 트리거 다시 끔
+
+  duration = pulseIn (ECHO, HIGH); //물체에 반사되어 돌아온 초음파의 시간을 변수에 저장
+
+  distance = duration * 17 / 1000; // 걸린(왕복) 시간을 음속(340m/s)으로 나누고, 2로 나누고 Cm 단위로 변환. 계산기 돌려보면 됨
+
+
+  //PC모니터로 초음파 거리 측정값 확인
+  Serial.println(duration ); //초음파가 반사되어 돌아오는 시간
+
+  Serial.print("\nDIstance : ");
+  Serial.print(distance); //측정된 물체로부터 거리값(Cm)
+  Serial.println(" Cm");
+
+
+
+  delay(80); //80 미리초 주리로 측정값을 보여줍니다.
+
+}
