@@ -1,6 +1,6 @@
 # PID Seesaw Structure
 
-## 전체 연결 구조도
+## 배선도
 ![구조도](https://github.com/LswLlama/SeungTUDY/assets/115550749/04b3daa7-69f0-415c-99cf-abce9b26cc6a)
 
 ## 문제 해결도
