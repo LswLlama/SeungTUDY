@@ -1,10 +1,10 @@
 # PID Seesaw Structure
 
 ## 배선도
-![구조도](https://github.com/LswLlama/SeungTUDY/assets/115550749/04b3daa7-69f0-415c-99cf-abce9b26cc6a)
+![구조도](https://github.com/LswLlama/SeungTUDY/assets/115550749/6235d01a-16fe-4caf-9764-da845472cbf5)
 
 ## 문제 해결도
-![문제 해결도](https://github.com/LswLlama/SeungTUDY/assets/115550749/4b2daecd-96d7-4ef1-801e-1e088c30d140)
+![문제 해결도](https://github.com/LswLlama/SeungTUDY/assets/115550749/062d9971-2240-49d0-a6df-f3d53db44d28)
 
 ## 부품 종류
 - 프로세서
