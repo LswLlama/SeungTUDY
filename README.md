@@ -7,7 +7,7 @@ Dec 2022 ~ Jan 2023
 
 ### TOC
 - Document
-  - [`로봇팔 구조도`](project1_seesaw/src/Seesaw_structure.md) : 부품 & 구조도
+  - [`PID 제어기 구조도`](project1_seesaw/src/Seesaw_structure.md) : 부품 & 구조도
   - [`결과 보고서`](project1_seesaw/reource/결과보고서(수정본).docx) : 결과 보고서
 - Codes
   - [`초음파 센서 소스 코드`](project1_seesaw/src/s_codes/s_ultrasonic) : 초음파 센서 소스 코드
