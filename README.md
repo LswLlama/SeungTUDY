@@ -1,4 +1,6 @@
 # SeungTUDY
+배운거 까먹을 미래의 우리를 위해 쓰는 깃허브
+
 ## PID-basic
 Dec 2022 ~ Jan 2023
 
